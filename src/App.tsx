@@ -30,9 +30,9 @@ function App() {
 
 	return (
 		<div className="App">
-			{/* <Greet name="Bhuvesh" messageCount={20} isLoggedIn={false} />
+			{/* <Greet name="Bhuvesh" messageCount={20} isLoggedIn={false} /> */}
 			<Person name={personName} />
-			<PersonList names={nameList} /> */}
+			<PersonList names={nameList} />
 			{/* <Status status='success' /> */}
 			{/* <Heading>Placeholder text</Heading> */}
 			{/* <Oscar>
@@ -41,7 +41,7 @@ function App() {
 			{/* <Greet name="Bhuvesh" messageCount={0} isLoggedIn={true} /> */}
 			{/* <Button handleClick={(event, id) => console.log("Button clicked", event, id)} /> */}
 			{/* <Input value='' handleChange={(e) => console.log(e)} /> */}
-			<Container styles={{ border: '1px solid black', padding: '1rem', }} />
+			{/* <Container styles={{ border: '1px solid black', padding: '1rem', }} /> */}
 
 		</div>
 	);
