@@ -7,6 +7,7 @@ import { PersonList } from "./components/PersonList"
 import { Status } from "./components/Status"
 import { Button } from "./components/Button"
 import { Input } from './components/Input';
+import { Container } from './components/Container';
 
 
 function App() {
@@ -39,10 +40,12 @@ function App() {
 			</Oscar> */}
 			{/* <Greet name="Bhuvesh" messageCount={0} isLoggedIn={true} /> */}
 			{/* <Button handleClick={(event, id) => console.log("Button clicked", event, id)} /> */}
-			<Input value='' handleChange={(e) => console.log(e)} />
+			{/* <Input value='' handleChange={(e) => console.log(e)} /> */}
+			<Container styles={{ border: '1px solid black', padding: '1rem', }} />
 
 		</div>
 	);
 }
 
 export default App;
+
