@@ -10,6 +10,11 @@ import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { LoggedIn } from "./components/state/LoggedIn"
 import { User } from "./components/state/User"
+import { Counter } from "./components/state/Counter"
+import { ThemeContextProvider } from './components/context/ThemeContext'
+import { Box } from './components/context/Box'
+import { Private } from './components/auth/Private'
+import { Profile } from './components/auth/Profile'
 
 
 function App() {
@@ -45,8 +50,12 @@ function App() {
 			{/* <Input value='' handleChange={(e) => console.log(e)} /> */}
 			{/* <Container styles={{ border: '1px solid black', padding: '1rem', }} /> */}
 			{/* <LoggedIn /> */}
-			<User />
-
+			{/* <User /> */}
+			{/* <Counter /> */}
+			{/* <ThemeContextProvider >
+				<Box />
+			</ThemeContextProvider> */}
+			<Private isLoggedIn={true} component={Profile} />
 		</div>
 	);
 }
