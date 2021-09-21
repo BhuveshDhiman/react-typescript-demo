@@ -15,6 +15,7 @@ import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'
 import { Private } from './components/auth/Private'
 import { Profile } from './components/auth/Profile'
+import { List } from './components//generics/List'
 
 
 function App() {
@@ -55,7 +56,19 @@ function App() {
 			{/* <ThemeContextProvider >
 				<Box />
 			</ThemeContextProvider> */}
-			<Private isLoggedIn={true} component={Profile} />
+			{/* <Private isLoggedIn={true} component={Profile} /> */}
+			{/* <List items={['Red', 'Green', 'Blue']} onClick={(item) => console.log(item)} /> */}
+			{/* <List items={[1, 22, 333]} onClick={(item) => console.log(item)} /> */}
+			<List items={[
+				{
+					id: 1,
+					first: "Bhuvesh", last: "Dhiman"
+				},
+				{
+					id: 2,
+					first: "John", last: "Doe"
+				}
+			]} onClick={(item) => console.log(item)} />
 		</div>
 	);
 }
