@@ -15,7 +15,8 @@ import { ThemeContextProvider } from './components/context/ThemeContext'
 import { Box } from './components/context/Box'
 import { Private } from './components/auth/Private'
 import { Profile } from './components/auth/Profile'
-import { List } from './components//generics/List'
+import { List } from './components/generics/List'
+import { RandomNumber } from './components/restriction/RendomNumber'
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
 			{/* <Private isLoggedIn={true} component={Profile} /> */}
 			{/* <List items={['Red', 'Green', 'Blue']} onClick={(item) => console.log(item)} /> */}
 			{/* <List items={[1, 22, 333]} onClick={(item) => console.log(item)} /> */}
-			<List items={[
+			{/* <List items={[
 				{
 					id: 1,
 					first: "Bhuvesh", last: "Dhiman"
@@ -68,7 +69,8 @@ function App() {
 					id: 2,
 					first: "John", last: "Doe"
 				}
-			]} onClick={(item) => console.log(item)} />
+			]} onClick={(item) => console.log(item)} /> */}
+			<RandomNumber value={10} isPositive />
 		</div>
 	);
 }
