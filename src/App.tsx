@@ -16,7 +16,7 @@ import { Box } from './components/context/Box'
 import { Private } from './components/auth/Private'
 import { Profile } from './components/auth/Profile'
 import { List } from './components/generics/List'
-import { RandomNumber } from './components/restriction/RendomNumber'
+import { RandomNumber } from './components/restriction/RandomNumber'
 
 
 function App() {
